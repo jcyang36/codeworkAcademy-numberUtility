@@ -16,7 +16,7 @@ public class DateUtility {
 	
 	
 	public static String toString(int month, int day, int year, String delimiter){
-		return (month)+(delimiter)+(day)+(delimiter)+(year);
+		return String.format("%02d", month)+(delimiter)+String.format("%02d", day)+(delimiter)+String.format("%02d", year);
 	}
 	
 	
